@@ -167,6 +167,10 @@ header {
   align-items: center;
 }
 
+.hero-s{
+  padding: 120px 0 0;
+}
+
 .hero__btn {
   padding: 20px 50px;
   background-color: #F1F1F1;
@@ -760,6 +764,10 @@ input:focus {
 
 
 @media(max-width: 1200px) {
+  .hero-s{
+    padding: 0;
+  }
+
   .hero {
     &__all-container {
       align-items: flex-start;
@@ -847,6 +855,10 @@ input:focus {
 @media (max-width: 992px) {
   .header {
     padding-bottom: 0;
+
+    .hero-s{
+      padding: 0;
+    }
 
     &__nav-bar {
       flex-wrap: wrap;
@@ -1062,6 +1074,10 @@ input:focus {
     flex-wrap: wrap;
   }
 
+  .hero-s{
+    padding: 0;
+  }
+
   .catalog-item {
     width: 50%;
   }
@@ -1212,6 +1228,10 @@ input:focus {
     &__list {
       gap: 15px;
     }
+  }
+
+  .hero-s{
+    padding: 0;
   }
 
 
@@ -1390,6 +1410,10 @@ input:focus {
     flex-wrap: wrap;
   }
 
+  .hero-s{
+    padding: 0;
+  }
+
   .catalog-item {
     width: 50% !important;
   }
@@ -1407,6 +1431,20 @@ input:focus {
   }
 }
 @media (max-width: 600px) {
+  .price-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hero-s{
+    padding: 0;
+  }
+
+  .catalog__price{
+    text-align: center;
+    padding-bottom: 3px;
+  }
   .catalog-img {
     height: auto;
   }
@@ -1425,6 +1463,7 @@ input:focus {
 
   .catalog__card {
     height: 100%  !important;
+    border-radius: 10px;
   }
 
   .catalog__title {
@@ -1437,6 +1476,7 @@ input:focus {
   }
 
   .catalog__btn {
-    padding: 5px 7px;
+    padding: 5px 11px;
+    margin: 0;
   }
 }
