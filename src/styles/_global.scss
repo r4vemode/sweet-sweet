@@ -124,12 +124,6 @@ header {
 
 }
 
-.hero-s{
-  margin-top: 150px;
-}
-
-
-
 .hero__title-text {
   margin-top: 14px;
   font-size: 48px;
@@ -171,6 +165,10 @@ header {
 .hero__btn-container {
   display: flex;
   align-items: center;
+}
+
+.hero-s{
+  padding: 120px 0 0;
 }
 
 .hero__btn {
@@ -766,13 +764,13 @@ input:focus {
 
 
 @media(max-width: 1200px) {
+  .hero-s{
+    padding: 0;
+  }
+
   .hero {
     &__all-container {
       align-items: flex-start;
-    }
-
-    .hero-s{
-      margin-top: 0;
     }
 
     &__text {
@@ -858,15 +856,17 @@ input:focus {
   .header {
     padding-bottom: 0;
 
+    .hero-s{
+      padding: 0;
+    }
+
     &__nav-bar {
       flex-wrap: wrap;
       gap: 20px;
     }
   }
 
-  .hero-s{
-    margin-top: 0;
-  }
+
 
 
 
@@ -1075,7 +1075,7 @@ input:focus {
   }
 
   .hero-s{
-    margin-top: 0;
+    padding: 0;
   }
 
   .catalog-item {
@@ -1231,8 +1231,9 @@ input:focus {
   }
 
   .hero-s{
-    margin-top: 0;
+    padding: 0;
   }
+
 
   .benefits__card-text-container {
     width: 80%;
@@ -1410,7 +1411,7 @@ input:focus {
   }
 
   .hero-s{
-    margin-top: 0;
+    padding: 0;
   }
 
   .catalog-item {
@@ -1430,20 +1431,24 @@ input:focus {
   }
 }
 @media (max-width: 600px) {
+  .price-container{
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+  .hero-s{
+    padding: 0;
+  }
+
+  .catalog__price{
+    text-align: center;
+    padding-bottom: 3px;
+  }
   .catalog-img {
     height: auto;
   }
 
-  .hero-s{
-    margin-top: 0;
-  }
-
-  .price-container{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 3px;
-  }
   .cakes__list {
     justify-content: center;
   }
@@ -1458,6 +1463,7 @@ input:focus {
 
   .catalog__card {
     height: 100%  !important;
+    border-radius: 10px;
   }
 
   .catalog__title {
@@ -1470,7 +1476,7 @@ input:focus {
   }
 
   .catalog__btn {
-    padding: 5px 7px;
+    padding: 5px 11px;
     margin: 0;
   }
 }
